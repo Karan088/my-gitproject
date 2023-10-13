@@ -1,4 +1,4 @@
-print("Even or Odd Number Checker")
+print("Even or Odd Number Checker :Try Now")
 
 try:
     number = int(input("Enter a number:"))

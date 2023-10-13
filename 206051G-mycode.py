@@ -1,3 +1,5 @@
+print("Even or Odd Number Checker")
+
 try:
     number = int(input("Enter a number:"))
 

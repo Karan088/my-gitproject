@@ -1,19 +1,27 @@
 def main_menu():
-    print("Main Menu:")
-    print("1. Option 1")
-    
-    choice = input("Enter your choice (1 to select option, or 'q' to quit): ")
-    
-    if choice == '1':
-        option1()
-    elif choice.lower() == 'q':
-        print("Goodbye!")
-    else:
-        print("Invalid choice. Please try again.")
+    while True:
+        print("Main Menu:")
+        options = {
+            '1': 'Option 1',
+            '2': 'Option 2',
+            '3': 'Option 3',
+            '4': 'Exit',
+        }
+        for key, value in options.items():
+            print(f"{key}. {value}")
+        
+        choice = input("Enter your choice: ")
+        
+        if choice == '4':
+            print("Goodbye!")
+            break
 
-def option1():
-    print("You chose Option 1.")
-    # Implement Option 1 functionality here
+        selected_option = options.get(choice)
+        if selected_option:
+            print(f"You chose {selected_option}.")
+            # Implement functionality for the selected option here
+        else:
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main_menu()

@@ -5,6 +5,7 @@ try:
 
     if choice == 1:
         number = int(input("Enter a number:"))
+<<<<<<< HEAD
         result = "even" if number % 2 == 0 else "odd"
         print(f"{number} is {result}.")
     elif choice == 2:
@@ -15,6 +16,23 @@ try:
             print(f"{number} is {prime_status} number.")
         else:
             print(f"{number} is not a prime number.")
+=======
+        if number % 2 == 0:
+            print(number, "is even.")
+        else:
+            print(number, "is odd.")
+    elif choice == 2:
+        number = int(input("Enter a number:"))
+        if number > 1:
+            for i in range(2, int(number ** 0.5) + 1):
+                if number % i == 0:
+                    print(number, "is not a prime number.")
+                    break
+            else:
+                print(number, "is a prime number.")
+        else:
+            print(number, "is not a prime number.")
+>>>>>>> 2c51f36bb9352c6d6baa4ebc01bd6f1ee5a81a5d
     elif choice == 3:
         radius = float(input("Enter the radius of the circle:"))
         perimeter = 2 * 3.14159 * radius

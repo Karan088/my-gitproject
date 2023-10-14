@@ -1,3 +1,4 @@
+print("Welcome to the Game!")
 def main_menu():
     while True:
         print("Main Menu:")
